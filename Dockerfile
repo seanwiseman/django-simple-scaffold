@@ -2,7 +2,7 @@ FROM python:3.6.4-jessie
 
 RUN pip install pipenv
 
-ADD article_store /srv/app/
+ADD app/ /srv/app/
 WORKDIR /srv/app/
 
 RUN pipenv install --system
